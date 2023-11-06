@@ -6,8 +6,8 @@
   "scripts": {
     "lint": "eslint ./src/*.js ./src/**/*.js",
     "build": "babel ./src/app.js -d dist",
-    "dev": "NODE_ENV=dev nodemon --exec babel-node ./src/app.js",
-    "test": "NODE_ENV=test jest",
+    "dev": "set NODE_ENV=dev && nodemon --exec babel-node ./src/app.js",
+    "test": "set NODE_ENV=test && jest",
     "coverage": "jest --coverage"
   },
   "keywords": [],
