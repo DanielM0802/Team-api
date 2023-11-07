@@ -30,7 +30,6 @@ describe('Business logic: Club: List', () => {
     expect(mockFind).toHaveBeenCalledWith({});
     expect(mockFind().populate).toHaveBeenCalledWith('admin managers.userId');
     expect(result).toEqual(sampleClubs);
-    console.log(result)
   });
 
   it('Should handle an empty list of clubs', async () => {
