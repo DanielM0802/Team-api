@@ -8,6 +8,7 @@
     "build": "babel ./src/app.js -d dist",
     "dev": "set NODE_ENV=dev && nodemon --exec babel-node ./src/app.js",
     "test": "set NODE_ENV=test && jest",
+    "testt": "jest ./test/business-logic/users/get-one.test.js",
     "coverage": "jest --coverage"
   },
   "keywords": [],
